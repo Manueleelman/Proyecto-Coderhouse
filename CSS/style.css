@@ -259,7 +259,7 @@ header{
     margin: 0 72px;
 }
 
-.container2 {
+.container-phone {
     display: none;
 
 }
@@ -465,9 +465,7 @@ footer {
     justify-content: space-evenly;
 }
 
-footer .img{
-    -webkit-filter: grayscale(100%);
-}
+
 
 
 #adi {
@@ -601,7 +599,7 @@ footer .img{
     .container-team{
         display: none;
     }
-    .container2{
+    .container-phone{
         display: flex;
         justify-content: center;
         margin: 18px;
