@@ -1,0 +1,142 @@
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 10000000;
+
+    .navbar{
+        padding: 0;
+        align-items: center;
+
+        #navbar {
+          background-color: map-get($colors, comp-bk );
+            padding: 0 70px;
+            height: 75px;
+            a{
+             color: map-get($colors, secondary);
+             font-family: "Poppins", sans-serif;
+             font-size: 20px;
+             padding: 0 24px; 
+             &:hover{
+                 text-decoration: underline 2px; 
+                }
+                @include media-query-mobile(){
+                    font-size: 20px;
+                    padding: 8px 24px;
+                }
+            }
+
+            #logoXL{
+                position: relative;
+                top: 32px;
+                @include media-query-mobile(){
+                    display: none;
+                }
+                
+            }
+            
+            #logoPhone{
+                display: none;
+                @include media-query-mobile(){
+                    display: flex;
+                    padding-left: 8px;
+                }
+            }
+
+            .navbar-icons{
+             @include flexbox(center, center);
+
+             button{
+                 border-style: none;
+                 background-color: transparent;
+                 padding: 0px;
+                 margin-right: 8px;
+                 &:hover{
+                     background-color: map-get($colors, comp-bk-light);  
+                     border-radius: 20px;  
+                    }
+
+                    .material-symbols-outlined{
+                        font-size: 24px;
+                        color: map-get($colors, secondary);
+                        padding: 4px;
+                    }                       
+                    #searchIcon{
+                        background-color: map-get($colors, comp-bk-light);   
+                        border-top-right-radius: 16px;
+                        border-bottom-right-radius: 16px;
+                        padding: 4px 8px;
+                        height: 34px;
+                    }                      
+                }
+
+                #searchInput{
+                    width: 120px;
+                    height: 34px;
+                    background-color: map-get($colors, comp-bk-light);  
+                    color: map-get($colors, secondary );
+                    padding: 4px 12px;
+                    border-top-left-radius: 16px;
+                    border-bottom-left-radius: 16px;
+                    border-style: none;
+              
+
+                }   
+                @include media-query-mobile(){
+                    display: none;
+                }            
+            } 
+            @include media-query-mobile(){
+                background-color: map-get($colors, comp-bk);
+                padding: 0 8px;
+                padding-top: 8px;       
+                height: 75px;
+
+                #menu{
+                    color: map-get($colors, secondary );
+                    padding: 8px; 
+                }
+                .navbar-toggler{
+                margin: 0;
+                padding: 4px;  
+                }
+                #navbarSupportedContent{
+                    background-color: map-get($colors, comp-bk);
+                    position: relative;
+                    top: 8px;
+                    height: 200px;
+                }
+            }            
+
+        }
+
+        @include media-query-mobile(){
+            padding: 0;
+            align-items: center;
+        }
+
+
+    }
+
+
+    
+
+    
+    
+
+
+    
+
+    
+
+
+
+
+
+    @include media-query-mobile(){
+        
+    }
+}
+
+
+
+

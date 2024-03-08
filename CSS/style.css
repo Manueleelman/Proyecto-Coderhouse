@@ -502,42 +502,42 @@ footer {
     #navbar{
         background-color: #1F1F1F;
         padding: 0 8px;
-        padding-top: 8px;
+        padding-top: 8px;       
         height: 75px;
     }
     #navbarSupportedContent{
-        background-color: #1F1F1F;
+        background-color: #1F1F1F;  v
         position: relative;
         top: 8px;
         height: 200px;
     }
     
     #logoXL{
-        display: none;
+        display: none;  v
     }
 
     #logoPhone{
         display: flex;
-        padding-left: 8px;
+        padding-left: 8px; v
     }
 
     .navbar-toggler{
-        margin: 0;
-        padding: 4px;
+        margin: 0;     v
+        padding: 4px;  
     }
     #menu{
         color: white;
-        padding: 8px;   
+        padding: 8px;       v
     }
 
     #navbar a{
         font-size: 20px;
-        padding: 8px 24px;
+        padding: 8px 24px;  v
     }
     
     
     .navbar-icons{
-        display: none;
+        display: none;  v
     }
 
 

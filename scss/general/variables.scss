@@ -1,0 +1,36 @@
+$colors: (
+    accent: #ED1B2E,
+
+    secondary: white,
+    terciary: black,
+    bk: white,
+    comp-bk:#1F1F1F,
+    comp-bk-light:rgba(255, 255, 255, 0.242),
+);
+
+.btn{
+    padding: 20px;
+
+}
+
+.btn-primary{
+    @extend .btn;
+
+}
+
+.btn-secondary{
+    @extend .btn;
+
+}
+
+@mixin flexbox( $jc, $ai){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin media-query-mobile{
+    @media ( max-width: 576px ) {
+        @content;
+    }
+}

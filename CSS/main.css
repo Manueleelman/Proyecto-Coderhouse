@@ -1,0 +1,129 @@
+.btn, .btn-secondary, .btn-primary {
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10000000;
+}
+header .navbar {
+  padding: 0;
+  align-items: center;
+}
+header .navbar #navbar {
+  background-color: #1F1F1F;
+  padding: 0 70px;
+  height: 75px;
+}
+header .navbar #navbar a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  padding: 0 24px;
+}
+header .navbar #navbar a:hover {
+  text-decoration: underline 2px;
+}
+@media (max-width: 576px) {
+  header .navbar #navbar a {
+    font-size: 20px;
+    padding: 8px 24px;
+  }
+}
+header .navbar #navbar #logoXL {
+  position: relative;
+  top: 32px;
+}
+@media (max-width: 576px) {
+  header .navbar #navbar #logoXL {
+    display: none;
+  }
+}
+header .navbar #navbar #logoPhone {
+  display: none;
+}
+@media (max-width: 576px) {
+  header .navbar #navbar #logoPhone {
+    display: flex;
+    padding-left: 8px;
+  }
+}
+header .navbar #navbar .navbar-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar #navbar .navbar-icons button {
+  border-style: none;
+  background-color: transparent;
+  padding: 0px;
+  margin-right: 8px;
+}
+header .navbar #navbar .navbar-icons button:hover {
+  background-color: rgba(255, 255, 255, 0.242);
+  border-radius: 20px;
+}
+header .navbar #navbar .navbar-icons button .material-symbols-outlined {
+  font-size: 24px;
+  color: white;
+  padding: 4px;
+}
+header .navbar #navbar .navbar-icons button #searchIcon {
+  background-color: rgba(255, 255, 255, 0.242);
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding: 4px 8px;
+  height: 34px;
+}
+header .navbar #navbar .navbar-icons #searchInput {
+  width: 120px;
+  height: 34px;
+  background-color: rgba(255, 255, 255, 0.242);
+  color: white;
+  padding: 4px 12px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-style: none;
+}
+@media (max-width: 576px) {
+  header .navbar #navbar .navbar-icons {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  header .navbar #navbar {
+    background-color: #1F1F1F;
+    padding: 0 8px;
+    padding-top: 8px;
+    height: 75px;
+  }
+  header .navbar #navbar #menu {
+    color: white;
+    padding: 8px;
+  }
+  header .navbar #navbar .navbar-toggler {
+    margin: 0;
+    padding: 4px;
+  }
+  header .navbar #navbar #navbarSupportedContent {
+    background-color: #1F1F1F;
+    position: relative;
+    top: 8px;
+    height: 200px;
+  }
+}
+@media (max-width: 576px) {
+  header .navbar {
+    padding: 0;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
