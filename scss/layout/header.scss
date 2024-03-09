@@ -13,7 +13,6 @@ header{
             height: 75px;
             a{
              color: map-get($colors, secondary);
-             font-family: "Poppins", sans-serif;
              font-size: 20px;
              padding: 0 24px; 
              &:hover{
@@ -117,23 +116,10 @@ header{
 
     }
 
-
-    
-
-    
-    
-
-
-    
-
-    
-
-
-
-
-
     @include media-query-mobile(){
-        
+        position: fixed;
+        top: 0;
+
     }
 }
 

@@ -546,7 +546,7 @@ footer {
     .banner-home{
         background-size: cover;
         background-position: left 30px;
-        height: 200px;
+        height: 200px;                        v 
         border-bottom: solid 8px #ED1B2E;
     }
     .row{
@@ -557,11 +557,11 @@ footer {
     }
     
     .container-home{ 
-        padding: 8px;
+        padding: 8px;     v
     }
     
     #gameInfo{
-        column-gap: 8px;
+        column-gap: 8px;    v
     }
 
 
@@ -576,7 +576,7 @@ footer {
         box-shadow: rgba(0, 0, 0, 0.779) 0px -110px 45px -25px inset;
     }
     .news{
-     margin: 0 8px;
+     margin: 0 8px;    v
     }
 
     .xlnew-text{ 
@@ -586,7 +586,7 @@ footer {
     }
     .xlnew-text a{
         font-size: 24px;
-        text-decoration: none;
+        text-decoration: none;  v
         color: white;
     }
     

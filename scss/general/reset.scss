@@ -2,4 +2,23 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins",sans-serif;
+    a{
+        text-decoration: none;
+    }
+    .row{
+        margin: 0 72px;
+        @include media-query-mobile(){
+            margin: 0 8px;
+        }
+    }
+    section{
+        margin: 64px 0;
+    }
+
+    @include media-query-mobile(){
+        .col{
+          padding: 0 ;
+        }        
+    }
+
 }

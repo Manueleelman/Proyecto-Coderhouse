@@ -1,0 +1,115 @@
+.banner-home{
+    background-image: url(../Images/bannerhome.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 420px;
+    border-bottom: solid 16px map-get($colors, accent );
+    @include media-query-mobile(){
+        background-position: left 30px;
+        height: 200px;
+        border-bottom: solid 8px map-get($colors, accent );
+    }
+}
+
+.container-home{
+    padding: 24px 70px;
+
+    #bigTitle{
+        font-size: 40px;
+        font-weight: bold;
+        @include flexbox(center,center);
+        padding-bottom:24px;
+    }
+
+    .calendar{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 12px;
+        box-shadow: rgba(100, 100, 111, 0.375) 0px 7px 29px 0px; 
+        border-radius: 12px;
+        margin-bottom: 24px;
+        div{
+            @include flexbox(center,center);
+            padding: 12px;
+        }
+        h5{
+            font-size: 20px;
+            font-weight: bold;
+            margin: 4px;
+        }
+        a{
+            @include flexbox(center,center);
+        }
+
+        #gameInfo{
+            column-gap: 28px;
+            padding-top: 24px;
+            padding-bottom: 0;
+            div{
+                flex-direction: column;
+                padding: 0;
+            }  
+            @include media-query-mobile() {
+                column-gap: 8px;  
+            }
+        }
+
+        #scores-title{
+            padding: 12px 0;
+            text-align: center;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 26px;
+        }
+
+        .scores{
+            @include flexbox(center,center);
+            padding: 0 12px;
+            padding-bottom: 24px;
+            h2{
+                @include flexbox(center,center);
+                text-align: center;
+                font-size: 18px;
+                font-weight: 600;
+                width: 120px;
+            }
+
+            .fixture{
+                font-size: 32px;
+                font-family: "Bebas Neue",sans-serif;
+                @include flexbox(center,center);
+                p{
+                    background-color: map-get($colors, comp-bk );
+                    border-radius: 8px;
+                    color: map-get($colors, secondary ); 
+                    padding: 4px 16px;  
+                    margin: 0 8px; 
+                }
+            }    
+        }
+
+    }
+
+    @include media-query-mobile(){
+        padding: 8px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
