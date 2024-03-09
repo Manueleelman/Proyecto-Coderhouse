@@ -19,8 +19,35 @@
   color: white;
 }
 
-.btn, .btn-secondary, .btn-primary {
+.btn, .button-type2, .button-type1 {
   padding: 20px;
+  border: none;
+  height: 40px;
+  width: fit-content;
+  padding: 0 16px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.button-type1 {
+  background-color: #ED1B2E;
+  border-radius: 8px;
+}
+.button-type1:hover {
+  background-color: #fc3545;
+}
+
+.button-type2 {
+  background-color: #1F1F1F;
+  border-radius: 20px;
+}
+.button-type2:hover {
+  background-color: rgba(255, 255, 255, 0.242);
 }
 
 * {
@@ -50,6 +77,7 @@
 
 header {
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 10000000;
 }
@@ -172,7 +200,7 @@ header .navbar #navbar .navbar-icons #searchInput {
 }
 
 .banner-home {
-  background-image: url(../Images/bannerhome.jpg);
+  background-image: url(../images/bannerhome.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 420px;
@@ -282,7 +310,7 @@ header .navbar #navbar .navbar-icons #searchInput {
   padding: 75px 70px 0 70px;
   width: 100%;
   height: 550px;
-  background-image: url("../Images/river-campeon.jpg");
+  background-image: url("../images/river-campeon.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.779) 0px -210px 36px -28px inset;
@@ -321,6 +349,7 @@ header .navbar #navbar .navbar-icons #searchInput {
     width: fit-content;
     height: 300px;
     box-shadow: rgba(0, 0, 0, 0.779) 0px -110px 45px -25px inset;
+    margin-top: 50px;
   }
 }
 
@@ -334,6 +363,245 @@ header .navbar #navbar .navbar-icons #searchInput {
 @media (max-width: 576px) {
   .news {
     margin: 0 8px;
+  }
+}
+
+.banner-team {
+  background-image: url(../images/bannerteam.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 310px;
+  border-bottom: solid 16px #ED1B2E;
+  display: flex;
+  align-items: end;
+}
+.banner-team h1 {
+  font-size: 64px;
+  font-weight: 600;
+  color: white;
+  padding-left: 70px;
+  padding-bottom: 15px;
+}
+@media (max-width: 576px) {
+  .banner-team {
+    display: none;
+  }
+}
+
+.player-position {
+  margin: 0px 72px;
+  padding-left: 12px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 50px;
+}
+@media (max-width: 576px) {
+  .player-position {
+    margin: 32px 0;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.container-team {
+  padding: 0;
+  margin: 0 70px;
+}
+@media (max-width: 576px) {
+  .container-team {
+    display: none;
+  }
+}
+
+.container-phone {
+  display: none;
+}
+.container-phone .carousel {
+  background-image: url(../images/fondo.png);
+  border-radius: 12px;
+}
+.container-phone .carousel-caption h5 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  color: white;
+  padding: 4px;
+  background-color: #1F1F1F;
+  border-radius: 8px;
+}
+@media (max-width: 576px) {
+  .container-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 18px;
+  }
+}
+
+#riverID {
+  background-image: url(../images/hinchadas.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  padding-top: 75px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#riverID .col-4 {
+  width: 300px;
+  height: 50%;
+}
+@media (max-width: 576px) {
+  #riverID {
+    display: none;
+  }
+}
+
+#riverID button {
+  padding: 0 32px;
+  position: relative;
+  top: 100%;
+}
+
+#phoneRiver {
+  display: none;
+}
+@media (max-width: 576px) {
+  #phoneRiver {
+    display: block;
+    margin-bottom: 0;
+  }
+  #phoneRiver .stadium-background {
+    height: fit-content;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url(../images/aver2.jpg);
+    margin: 0;
+  }
+  #phoneRiver .stadium-background div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+  }
+  #phoneRiver .stadium-background #titleId {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #phoneRiver .stadium-background h1 {
+    flex-wrap: wrap;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #phoneRiver .stadium-background h2 {
+    padding-top: 48px;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #phoneRiver .stadium-background ul {
+    color: white;
+    font-size: 14px;
+    background-color: rgba(31, 31, 31, 0.4);
+    padding: 8px 16px;
+    border-radius: 12px;
+  }
+  #phoneRiver .stadium-background ul li {
+    padding: 4px 0;
+  }
+}
+
+.login-page {
+  background-color: #141414;
+  margin: 0;
+  padding: 24px 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  column-gap: 32px;
+}
+.login-page .row {
+  margin: 12px 32px;
+}
+.login-page #imgRiverid {
+  width: 50%;
+}
+@media (max-width: 576px) {
+  .login-page #imgRiverid {
+    width: 75%;
+  }
+}
+.login-page #firstColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-page #firstColumn .login .button-type1 {
+  width: 100%;
+  margin: 24px 12px;
+}
+.login-page #firstColumn .login .inputs {
+  font-size: 24px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.242);
+  border-radius: 6px;
+  width: 100%;
+  margin: 12px 0;
+  padding: 8px;
+  border-style: none;
+  color: white;
+}
+.login-page #firstColumn .login #settings #checkbox {
+  color: white;
+  font-size: 14px;
+}
+.login-page #firstColumn .login #settings #forgottenPassword {
+  color: #ED1B2E;
+  font-size: 14px;
+  display: flex;
+  justify-content: end;
+}
+@media (max-width: 576px) {
+  .login-page #firstColumn .login #settings #forgottenPassword {
+    justify-content: center;
+    padding: 8px 0;
+  }
+}
+@media (max-width: 576px) {
+  .login-page #firstColumn .login #settings {
+    flex-direction: column;
+    padding: 0 12px;
+  }
+}
+.login-page #secondColumn {
+  background-image: url(../images/Enzo.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 24px;
+}
+@media (max-width: 576px) {
+  .login-page #secondColumn {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .login-page {
+    padding: 24px 8px;
+    margin: 0;
+  }
+  .login-page .row {
+    justify-content: center;
+    margin: 16px 0px;
   }
 }
 

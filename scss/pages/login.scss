@@ -1,0 +1,90 @@
+.login-page{
+    background-color: #141414;
+    margin: 0;
+    padding: 24px 70px;
+    @include flexbox(center,center);
+    height: 100vh;
+    column-gap: 32px;
+    .row{
+        margin: 12px 32px;
+    }
+    #imgRiverid{
+        width: 50%;
+        @include media-query-mobile(){
+            width: 75%;
+        }
+    }
+    #firstColumn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .login{
+            .button-type1{
+                width: 100%;
+                margin: 24px 12px;
+            }   
+            .inputs {
+                font-size: 24px;
+                font-size: 18px;
+                background: map-get($colors, comp-bk-light);
+                border-radius: 6px;
+                width: 100%;
+                margin:12px 0 ;
+                padding: 8px;
+                border-style: none;
+                color: map-get($colors, secondary);
+            }            
+            #settings{
+
+                #checkbox{
+                    color: map-get($colors, secondary);
+                    font-size: 14px;
+                }
+                #forgottenPassword{
+                    color: map-get($colors, accent);
+                    font-size: 14px;
+                    display: flex;
+                    justify-content: end;
+                    @include media-query-mobile(){
+                     justify-content: center;
+                     padding: 8px 0;
+                    }
+                } 
+                @include media-query-mobile(){
+                    flex-direction: column;
+                    padding: 0 12px;
+                }          
+            } 
+
+        }        
+    }
+    #secondColumn{
+     background-image: url(../images/Enzo.jpg);
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+     border-radius: 24px;
+        @include media-query-mobile(){
+            display: none;
+        }
+    }
+
+    @include media-query-mobile(){
+        padding: 24px 8px;
+        margin: 0;
+        .row{
+            justify-content: center;
+            margin: 16px 0px;
+        }
+    }
+}
+
+
+
+
+
+ 
+
+
+
+

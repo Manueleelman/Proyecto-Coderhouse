@@ -1,6 +1,6 @@
 $colors: (
     accent: #ED1B2E,
-
+    accent-light:#fc3545,
     secondary: white,
     terciary: black,
     bk: white,
@@ -9,6 +9,18 @@ $colors: (
 );
 
 
+
+@mixin flexbox( $jc, $ai){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin media-query-mobile{
+    @media ( max-width: 576px ) {
+        @content;
+    }
+}
 
 .card{
     background-image: url(../Images/fondo.png);
@@ -34,32 +46,35 @@ $colors: (
     } 
 }
 
-
-
-
 .btn{
     padding: 20px;
-
+    border: none;  
+    height: 40px;
+    width: fit-content;
+    padding: 0 16px;
+    color: map-get($colors, secondary );
+    font-size: 16px;
+    font-weight: 600;
+    @include flexbox(center,center);
+    align-self: center;
 }
 
-.btn-primary{
+.button-type1{
     @extend .btn;
+    background-color: map-get($colors, accent);
+    border-radius: 8px;
+    &:hover{
+        background-color: map-get($colors, accent-light)
 
-}
-
-.btn-secondary{
-    @extend .btn;
-
-}
-
-@mixin flexbox( $jc, $ai){
-    display: flex;
-    justify-content: $jc;
-    align-items: $ai;
-}
-
-@mixin media-query-mobile{
-    @media ( max-width: 576px ) {
-        @content;
     }
 }
+
+.button-type2{
+    @extend .btn;
+    background-color: map-get($colors, comp-bk);
+    border-radius: 20px;
+    &:hover{
+        background-color: map-get($colors, comp-bk-light);   
+    }   
+}
+

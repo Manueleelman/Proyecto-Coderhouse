@@ -1,0 +1,68 @@
+#riverID{
+    background-image: url(../images/hinchadas.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    padding-top:75px ;
+    margin: 0;
+ @include flexbox(center,center);
+    .col-4{
+        width: 300px;
+        height: 50%;
+    } 
+    @include media-query-mobile(){
+        display: none;
+    }
+}
+#riverID button{
+    padding: 0 32px;
+    position: relative;
+    top: 100%;
+}
+
+#phoneRiver{
+    display: none;
+    @include media-query-mobile(){
+        display: block;
+        margin-bottom:0 ;
+        .stadium-background{
+            height: fit-content;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-image: url(../images/aver2.jpg);
+            margin: 0;
+            div{
+                @include flexbox(center, center);
+                padding-top: 24px;
+            }
+            #titleId{
+                @include flexbox(center, center);                
+            }
+            h1{
+                flex-wrap: wrap;
+                color: map-get($colors, secondary );
+                font-family: "Bebas Neue",sans-serif;
+                font-size: 70px;
+                @include flexbox(center,center);
+            }
+            h2{
+                padding-top: 48px;
+                color: map-get($colors, secondary );
+                font-size: 28px;
+                @include flexbox(center,center);
+            }
+            ul{
+                color: map-get($colors, secondary );
+                font-size: 14px;
+                background-color: #1f1f1f66;
+                padding: 8px 16px;
+                border-radius: 12px;
+                li{
+                    padding: 4px 0;
+                }                
+            }
+
+        }
+    }
+}

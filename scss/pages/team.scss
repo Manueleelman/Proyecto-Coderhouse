@@ -1,0 +1,74 @@
+.banner-team{
+    background-image: url(../images/bannerteam.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 310px;
+    border-bottom: solid 16px map-get($colors , accent );
+    display: flex;
+    align-items: end;
+    h1{
+        font-size: 64px;
+        font-weight: 600;
+        color: map-get($colors, secondary );
+        padding-left: 70px;
+        padding-bottom: 15px;
+    } 
+    @include media-query-mobile(){
+        display: none;
+    }
+}
+
+
+.player-position{
+    margin: 0px 72px;
+    padding-left: 12px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;
+    @include media-query-mobile(){
+        margin: 32px 0;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+.container-team{
+    padding: 0;
+    margin: 0 70px ;
+    @include media-query-mobile(){
+        display: none;
+    }
+
+}
+
+
+.container-phone {
+    display: none;
+    .carousel{
+        background-image: url(../images/fondo.png);
+        border-radius: 12px;
+    }
+
+    .carousel-caption{
+        h5{
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 24px;
+            color: map-get($colors , secondary);
+            padding: 4px;
+            background-color: map-get($colors, comp-bk );
+            border-radius: 8px;
+        }        
+    }
+    @include media-query-mobile(){
+        @include flexbox(center, center);
+        margin: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
