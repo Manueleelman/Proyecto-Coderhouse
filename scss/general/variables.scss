@@ -16,10 +16,29 @@ $colors: (
     align-items: $ai;
 }
 
+@mixin bk-img($bks, $bkp){
+    background-size: $bks;
+    background-repeat: no-repeat;
+    background-position: $bkp;
+}
+
+@mixin font($fc, $fs, $fw){
+    color: $fc;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin bebas($fc, $fs, $fw){
+    font-family: "Bebas Neue", sans-serif;
+    color: $fc;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
 @mixin media-query-mobile{
-    @media ( max-width: 576px ) {
+    @media ( max-width: 540px ) {
         @content;
-    }
+    };
 }
 
 .card{

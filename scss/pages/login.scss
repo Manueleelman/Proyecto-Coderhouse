@@ -15,38 +15,32 @@
         }
     }
     #firstColumn{
-        display: flex;
+        @include flexbox(center,start);
         flex-direction: column;
-        justify-content: center;
+        
         .login{
             .button-type1{
                 width: 100%;
                 margin: 24px 12px;
             }   
             .inputs {
-                font-size: 24px;
-                font-size: 18px;
+                @include font(map-get($colors,secondary),18px,400);
                 background: map-get($colors, comp-bk-light);
                 border-radius: 6px;
                 width: 100%;
                 margin:12px 0 ;
                 padding: 8px;
                 border-style: none;
-                color: map-get($colors, secondary);
             }            
             #settings{
 
                 #checkbox{
-                    color: map-get($colors, secondary);
-                    font-size: 14px;
+                    @include font(map-get($colors,secondary),14px,400);
                 }
                 #forgottenPassword{
-                    color: map-get($colors, accent);
-                    font-size: 14px;
-                    display: flex;
-                    justify-content: end;
+                    @include font(map-get($colors,accent),14px,400);
+                    @include flexbox(end,center);
                     @include media-query-mobile(){
-                     justify-content: center;
                      padding: 8px 0;
                     }
                 } 
@@ -60,9 +54,7 @@
     }
     #secondColumn{
      background-image: url(../images/Enzo.jpg);
-     background-size: contain;
-     background-repeat: no-repeat;
-     background-position: center;
+     @include bk-img(contain,center);
      border-radius: 24px;
         @include media-query-mobile(){
             display: none;

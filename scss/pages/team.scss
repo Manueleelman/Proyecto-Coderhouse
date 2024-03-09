@@ -1,15 +1,12 @@
 .banner-team{
     background-image: url(../images/bannerteam.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
+    @include bk-img(cover,initial);
     height: 310px;
     border-bottom: solid 16px map-get($colors , accent );
     display: flex;
     align-items: end;
     h1{
-        font-size: 64px;
-        font-weight: 600;
-        color: map-get($colors, secondary );
+        @include font(map-get($colors,secondary),64px,600);
         padding-left: 70px;
         padding-bottom: 15px;
     } 
@@ -22,8 +19,7 @@
 .player-position{
     margin: 0px 72px;
     padding-left: 12px;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 50px;
+    @include bebas(black,50px,400);
     @include media-query-mobile(){
         margin: 32px 0;
         padding: 0;
@@ -50,9 +46,7 @@
 
     .carousel-caption{
         h5{
-            font-family: "Bebas Neue", sans-serif;
-            font-size: 24px;
-            color: map-get($colors , secondary);
+            @include bebas(map-get($colors,secondary),24px,400);
             padding: 4px;
             background-color: map-get($colors, comp-bk );
             border-radius: 8px;

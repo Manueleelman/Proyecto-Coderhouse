@@ -1,0 +1,42 @@
+footer {
+    background-color: map-get($colors, comp-bk );
+    padding: 24px 70px;
+    @include flexbox(space-evenly,center);
+
+    #adi {
+        margin: 40px 60px;
+        @include media-query-mobile(){
+            margin: 0;
+        }
+    }
+    #code{
+        margin: 50px 60px;
+        @include media-query-mobile(){
+            margin: 0;
+        }
+    }
+    #assis{
+        margin: 40px 60px ;
+        @include media-query-mobile(){
+            margin: 0;
+        }
+    }
+    #direct{
+        margin: 50px 60px; 
+        @include media-query-mobile(){
+            margin: 0;
+        }
+    }
+    @include media-query-mobile(){
+
+        padding: 24px 8px;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 24px;
+    }
+
+}
+
+
+
+

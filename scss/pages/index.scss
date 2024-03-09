@@ -1,7 +1,6 @@
 .banner-home{
     background-image: url(../images/bannerhome.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
+    @include bk-img(cover,center);
     height: 420px;
     border-bottom: solid 16px map-get($colors, accent );
     @include media-query-mobile(){
@@ -15,8 +14,7 @@
     padding: 24px 70px;
 
     #bigTitle{
-        font-size: 40px;
-        font-weight: bold;
+        @include font(black,40px,bold);
         @include flexbox(center,center);
         padding-bottom:24px;
     }
@@ -33,8 +31,7 @@
             padding: 12px;
         }
         h5{
-            font-size: 20px;
-            font-weight: bold;
+            @include font(black,20px,bold);
             margin: 4px;
         }
         a{
@@ -57,8 +54,7 @@
         #scores-title{
             padding: 12px 0;
             text-align: center;
-            font-family: "Bebas Neue", sans-serif;
-            font-size: 26px;
+            @include bebas(black,26px,400);
         }
 
         .scores{
@@ -68,14 +64,12 @@
             h2{
                 @include flexbox(center,center);
                 text-align: center;
-                font-size: 18px;
-                font-weight: 600;
+                @include font(black,18px,600);
                 width: 120px;
             }
 
             .fixture{
-                font-size: 32px;
-                font-family: "Bebas Neue",sans-serif;
+                @include bebas(black,32px,400);
                 @include flexbox(center,center);
                 p{
                     background-color: map-get($colors, comp-bk );

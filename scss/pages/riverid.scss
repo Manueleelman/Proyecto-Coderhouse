@@ -1,8 +1,7 @@
 #riverID{
     background-image: url(../images/hinchadas.jpg);
-    background-repeat: no-repeat;
+    @include bk-img(cover,initial);  
     height: 100vh;
-    background-size: cover;
     padding-top:75px ;
     margin: 0;
  @include flexbox(center,center);
@@ -27,9 +26,9 @@
         margin-bottom:0 ;
         .stadium-background{
             height: fit-content;
-            background-size: cover;
+            @include bk-img(cover,center);           
             background-attachment: fixed;
-            background-position: center;
+
             background-image: url(../images/aver2.jpg);
             margin: 0;
             div{
@@ -42,19 +41,16 @@
             h1{
                 flex-wrap: wrap;
                 color: map-get($colors, secondary );
-                font-family: "Bebas Neue",sans-serif;
-                font-size: 70px;
+                @include bebas(map-get($colors, secondary),70px,400);
                 @include flexbox(center,center);
             }
             h2{
                 padding-top: 48px;
-                color: map-get($colors, secondary );
-                font-size: 28px;
+                @include font(map-get($colors,secondary),28px,400);
                 @include flexbox(center,center);
             }
             ul{
-                color: map-get($colors, secondary );
-                font-size: 14px;
+                @include font(map-get($colors,secondary),14px,400);
                 background-color: #1f1f1f66;
                 padding: 8px 16px;
                 border-radius: 12px;
