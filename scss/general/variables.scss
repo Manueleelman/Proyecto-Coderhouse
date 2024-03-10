@@ -5,10 +5,10 @@ $colors: (
     terciary: black,
     bk: white,
     comp-bk:#1F1F1F,
-    comp-bk-light:rgba(255, 255, 255, 0.242),
+    comp-bk-light:#4a4a4a,
 );
 
-
+ 
 
 @mixin flexbox( $jc, $ai){
     display: flex;
@@ -41,6 +41,13 @@ $colors: (
     };
 }
 
+@mixin anim-params($an, $ad, $atf, $aic){
+    animation-name: $an;
+    animation-duration: $ad;
+    animation-timing-function: $atf;
+    animation-iteration-count: $aic;
+}
+
 .card{
     background-image: url(../Images/fondo.png);
     border: none;
@@ -61,6 +68,7 @@ $colors: (
         .card-body{
             background-color: map-get($colors, comp-bk );
             color: map-get($colors, secondary );
+            
         }        
     } 
 }
@@ -95,5 +103,52 @@ $colors: (
     &:hover{
         background-color: map-get($colors, comp-bk-light);   
     }   
+}
+
+
+@keyframes fade-right {
+    0%{
+        opacity: 0;
+        transform: translateX(-140px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+@keyframes fade-left {
+    0%{
+        opacity: 0;
+        transform: translateX(140px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(140px) ;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes xl-new{
+    0%{
+        background-size: 110%;
+        background-position: center;
+    }
+    100%{
+        background-size: 100%;
+        background-position: initial;          
+    }
 }
 

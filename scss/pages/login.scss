@@ -1,5 +1,6 @@
 .login-page{
-    background-color: #141414;
+    background-image: url(../images/bk.png);
+    @include bk-img(cover,center);
     margin: 0;
     padding: 24px 70px;
     @include flexbox(center,center);
@@ -41,7 +42,8 @@
                     @include font(map-get($colors,accent),14px,400);
                     @include flexbox(end,center);
                     @include media-query-mobile(){
-                     padding: 8px 0;
+                        justify-content: center;
+                     padding-top: 8px ;
                     }
                 } 
                 @include media-query-mobile(){
@@ -52,10 +54,12 @@
 
         }        
     }
+
     #secondColumn{
+     height: 90vh;
      background-image: url(../images/Enzo.jpg);
      @include bk-img(contain,center);
-     border-radius: 24px;
+     border-radius: 40px;
         @include media-query-mobile(){
             display: none;
         }

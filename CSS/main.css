@@ -47,9 +47,49 @@
   border-radius: 20px;
 }
 .button-type2:hover {
-  background-color: rgba(255, 255, 255, 0.242);
+  background-color: #4a4a4a;
 }
 
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-140px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(140px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(140px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes xl-new {
+  0% {
+    background-size: 110%;
+    background-position: center;
+  }
+  100% {
+    background-size: 100%;
+    background-position: initial;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -134,7 +174,7 @@ header .navbar #navbar .navbar-icons button {
   margin-right: 8px;
 }
 header .navbar #navbar .navbar-icons button:hover {
-  background-color: rgba(255, 255, 255, 0.242);
+  background-color: #4a4a4a;
   border-radius: 20px;
 }
 header .navbar #navbar .navbar-icons button .material-symbols-outlined {
@@ -143,7 +183,7 @@ header .navbar #navbar .navbar-icons button .material-symbols-outlined {
   padding: 4px;
 }
 header .navbar #navbar .navbar-icons button #searchIcon {
-  background-color: rgba(255, 255, 255, 0.242);
+  background-color: #4a4a4a;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
   padding: 4px 8px;
@@ -152,7 +192,7 @@ header .navbar #navbar .navbar-icons button #searchIcon {
 header .navbar #navbar .navbar-icons #searchInput {
   width: 120px;
   height: 34px;
-  background-color: rgba(255, 255, 255, 0.242);
+  background-color: #4a4a4a;
   color: white;
   padding: 4px 12px;
   border-top-left-radius: 16px;
@@ -370,6 +410,10 @@ footer #direct {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: initial;
+  animation-name: xl-new;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
   box-shadow: rgba(0, 0, 0, 0.779) 0px -210px 36px -28px inset;
 }
 .xlnew .xlnew-text {
@@ -377,6 +421,10 @@ footer #direct {
   padding: 0 80px;
   position: relative;
   bottom: -325px;
+  animation-name: fade-up;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
 }
 .xlnew .xlnew-text a {
   color: white;
@@ -417,6 +465,22 @@ footer #direct {
 }
 .news div {
   padding-bottom: 16px;
+}
+.news .card:hover {
+  transform: scale(1.02);
+  transition: all 0.2s ease;
+}
+.news .new-odd {
+  animation-name: fade-right;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+.news .new-even {
+  animation-name: fade-left;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
 }
 @media (max-width: 540px) {
   .news {
@@ -466,6 +530,10 @@ footer #direct {
 .container-team {
   padding: 0;
   margin: 0 70px;
+}
+.container-team .card:hover {
+  transform: scale(1.02);
+  transition: all 0.2s ease;
 }
 @media (max-width: 540px) {
   .container-team {
@@ -588,7 +656,10 @@ footer #direct {
 }
 
 .login-page {
-  background-color: #141414;
+  background-image: url(../images/bk.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 0;
   padding: 24px 70px;
   display: flex;
@@ -622,7 +693,7 @@ footer #direct {
   color: white;
   font-size: 18px;
   font-weight: 400;
-  background: rgba(255, 255, 255, 0.242);
+  background: #4a4a4a;
   border-radius: 6px;
   width: 100%;
   margin: 12px 0;
@@ -644,7 +715,8 @@ footer #direct {
 }
 @media (max-width: 540px) {
   .login-page #firstColumn .login #settings #forgottenPassword {
-    padding: 8px 0;
+    justify-content: center;
+    padding-top: 8px;
   }
 }
 @media (max-width: 540px) {
@@ -654,11 +726,12 @@ footer #direct {
   }
 }
 .login-page #secondColumn {
+  height: 90vh;
   background-image: url(../images/Enzo.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 24px;
+  border-radius: 40px;
 }
 @media (max-width: 540px) {
   .login-page #secondColumn {

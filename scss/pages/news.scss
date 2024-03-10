@@ -7,12 +7,14 @@
     height: 550px ;
     background-image: url("../images/river-campeon.jpg");
     @include bk-img(cover,initial);
+    @include anim-params(xl-new, 4s, ease, 1);
     box-shadow: rgba(0, 0, 0, 0.779) 0px -210px 36px -28px inset;
     .xlnew-text{ 
         color:  map-get($colors, secondary );
         padding: 0 80px;
         position: relative;
         bottom: -325px;
+        @include anim-params(fade-up, 1s, ease-in, 1);
         a{
             @include font(map-get($colors,secondary),50px,400);
 
@@ -55,6 +57,20 @@
     div{
         padding-bottom: 16px;
     }
+    .card{
+        &:hover{
+            transform: scale(1.02);
+            transition: all 0.2s ease;
+        }
+    }
+    .new-odd{
+        @include anim-params(fade-right, 1s, ease, 1);        
+
+    }
+    .new-even{
+     @include anim-params(fade-left, 1s, ease, 1);        
+    }
+
 
     @include media-query-mobile(){
         margin: 0 8px;

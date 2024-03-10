@@ -30,6 +30,12 @@
 .container-team{
     padding: 0;
     margin: 0 70px ;
+    .card{
+        &:hover{
+            transform: scale(1.02);
+            transition: all 0.2s ease;
+        }
+    }
     @include media-query-mobile(){
         display: none;
     }
