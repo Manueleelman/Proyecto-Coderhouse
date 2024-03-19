@@ -1,5 +1,5 @@
 .card {
-  background-image: url(../Images/fondo.png);
+  background-image: url(../images/fondo.png);
   border: none;
   -webkit-box-shadow: 0px 4px 47px -21px rgba(0, 0, 0, 0.84);
   -moz-box-shadow: 0px 4px 47px -21px rgba(0, 0, 0, 0.84);
@@ -456,6 +456,10 @@ footer #direct {
     height: 300px;
     box-shadow: rgba(0, 0, 0, 0.779) 0px -110px 45px -25px inset;
     margin-top: 50px;
+    animation-name: xl-new;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 0;
   }
 }
 

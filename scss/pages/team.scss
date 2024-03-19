@@ -33,8 +33,9 @@
     .card{
         &:hover{
             transform: scale(1.02);
-            transition: all 0.2s ease;
+            transition: all 0.2s ease;      
         }
+
     }
     @include media-query-mobile(){
         display: none;

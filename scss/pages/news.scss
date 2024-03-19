@@ -44,6 +44,7 @@
         height: 300px;
         box-shadow: rgba(0, 0, 0, 0.779) 0px -110px 45px -25px inset;
         margin-top: 50px;
+        @include anim-params(xl-new, 4s, ease, 0);  
     }
 }
 
